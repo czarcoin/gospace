@@ -4,24 +4,24 @@ gospace is a workspace mangament tool for flattening vendor directory to a cohes
 
 This tool is necessary for linters that do not handle modules properly. Once Go tooling has caught up with modules, this tool/repository will be deprecated.
 
-An example setup for `storj.io/storj` would set these environment variables:
+An example setup for `czarcoin.org/czarcoin` would set these environment variables:
 
 ```
 # set go modules to default behavior
 GO111MODULE=auto
 
 # go knows where our gopath is
-GOPATH=~/storj
+GOPATH=~/czarcoin
 
 # gospace knows where our gopath is (this is to avoid accidental damage to existing GOPATH)
 # you should not use default GOPATH here
-GOSPACE_ROOT=~/storj
+GOSPACE_ROOT=~/czarcoin
 
 # set the github repository that this GOSPACE manages
-GOSPACE_PKG=storj.io/storj
+GOSPACE_PKG=czarcoin.org/czarcoin
 
 # set the where the repository is located
-GOSPACE_REPO=git@github.com:storj/storj.git
+GOSPACE_REPO=git@github.com:czarcoin/czarcoin.git
 ```
 
 ## Setup
